@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="~/Content/Style.css">
+    <link rel="stylesheet" href="~/Content/Menu.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+                <form name="MWF" method="post" action="~/Controllers/IndexController">
+                    <input type="hidden" name="action" value="MWF"/>
+                    <input type="submit" id="tab-MWF" name="tab-group-1">
+                    <label for="tab-MWF">MWF</label>
+                </form>
+            </li>
+            <li>
+                <form name="TH" method="post" action="~/Controllers/IndexController">
+                    <input type="hidden" name="action" value="TH" />
+                    <input type="submit" id="tab-TH" name="tab-group-1">
+                    <label for="tab-TH">TH</label>
+                </form>
+            </li>
+            <li>
+                <form name="Eve" method="post" action="~/Controllers/IndexController">
+                    <input type="hidden" name="action" value="Eve" />
+                    <input type="submit" id="tab-Eve" name="tab-group-1">
+                    <label for="tab-Eve">Evening</label>
+                </form>
+            </li>
+            <!---<li><a href="#">Evening</a> <ul>
+                    <li><a href="#">Monday</a></li>
+                    <li><a href="#">Tuesday</a></li>
+                    <li><a href="#">Wednesday</a></li>
+                    <li><a href="#">Thursday</a></li>
+                </ul>
+            </li> -->
+        </ul>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+
+</body>
+</html>

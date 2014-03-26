@@ -1,0 +1,21 @@
+﻿table {
+    border: solid 1px;
+    text-align: center;
+}
+tr{
+   border: solid 1px;
+}
+td {
+    border: solid 1px;
+}
+.mwfTable {
+    width: 1200px;
+}
+.mwfTable td{
+   width: 150px;
+}
+
+
+h2{
+    color:red;
+}
