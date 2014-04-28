@@ -122,6 +122,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="App_Data\Scheduledb.mdf" />
+    <Content Include="App_Data\Scheduledb_log.ldf">
+      <DependentUpon>Scheduledb.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\Menu.css" />
     <Content Include="Content\Style.css" />
     <Content Include="Global.asax" />
@@ -134,9 +138,7 @@
     </Content>
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
